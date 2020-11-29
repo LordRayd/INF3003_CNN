@@ -1,0 +1,15 @@
+{
+  "name": "DL_course",
+  "version": "1.0.0",
+  "description": "Deeplearn ",
+  "scripts": {
+    "present": "live-server --open=/",
+    "export": "decktape remark http://127.0.0.1:8080/index.html slides.pdf"
+  },
+  "author": "your name",
+  "license": "MIT",
+  "devDependencies": {
+    "decktape": "^2.11.0",
+    "live-server": "^1.2.1"
+  }
+}

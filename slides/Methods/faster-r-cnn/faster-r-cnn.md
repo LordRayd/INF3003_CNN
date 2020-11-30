@@ -9,14 +9,16 @@ marp: true
 ---
 
 ## Region Proposal Network (RPN)
-* Choose length and aspect number of Anchors (by default at 3)
-* 1 Classification
-* 1 Regression
 ![alt text](/assets/images/faster_r_cnn/rpn.jpeg "RPN model")
 
 ---
 
-![alt text](/assets/images/faster_r_cnn/anchors.png "RPN second view")
+* Anchors are labelised as **positive** if :
+    * it has the highest IoU with a groundtruth box
+    * it has an IoU greater than 0.7 with any groundtruth box.
+* Anchors are labelised as **negative** if :
+    * its IoU with all groundtruth boxes is less than 0.3
+* Other aren't used in training
 
 ---
 

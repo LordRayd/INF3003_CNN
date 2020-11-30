@@ -16,12 +16,14 @@ Pour chacune de ces régions, le RPN dispose de deux mécanismes :
 * un système de régression
 
 # Slide 3
-Le classifieur a pour objectif d’assigner une probabilité à une région de contenir un objet tandis que le système de régression adapte les coordonnées de la région. La probabilité d’une région de contenir un objet est notée p ou pi (probabilité de la zone i de contenir un objet). Les coordonnées (4 points) de chaque région sont notées t (ou ti pour la région i), t est donc un vecteur de taille 4.
+Le classifieur a pour objectif d’assigner une probabilité à une région de contenir un objet tandis que le système de régression adapte les coordonnées de la région. 
+En haut a gauche on peut voir le vecteur de probabilité qu'une region contienne un objet alors qu'en haut a droite ont trouve les coordonnées (4 points) de chaque région.
 
 Un RPN est un réseau qui est paramétré au fur et à mesure de l’apprentissage. 
 
-RPN utilise généralement une fonction log-loss car elle est plus intéressante que la simple précision, parce qu’elle permet de nuancer à quel point notre prédiction est proche de la valeur réelle.
+RPN utilise généralement une fonction de regression log-loss car elle est plus intéressante que la simple précision, parce qu’elle permet de nuancer à quel point notre prédiction est proche de la valeur réelle.
 
 # Slide 4
+On peut voir ici que l'algorithme Faster R-CNN est 245 fois plus rapide que l'algorithme de R-CNN et 11 fois plus rapide que l'agorithme Fast R-CNN. L'utilisation d'un autre selecteur de zones est donc bien plus efficace en terme de temps
 
 # Slide 5

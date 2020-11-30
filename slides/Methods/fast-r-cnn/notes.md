@@ -1,7 +1,7 @@
 # Slide 1
 La méthode Fast R-CNN est semblable à celle de R-CNN, car faite également par Ross Girshick et al, sa seul différence est que l'on donne non pas les propositions de zones mais l'image au CNN et que ce dernier nous renvoie un ensemble de carctéristiques.
 La principal raison de son efficacité vient du fait 
-que l'on a pas a donnés 2000 regions/zones au CNN à chaque itérations. Ainsi l'opération de convolution n'est exécuté qu'une seul fois et renvoie un ensemble de caractéristiques
+que l'on a pas a donner 2000 regions/zones au CNN à chaque itérations. Ainsi l'opération de convolution n'est exécuté qu'une seul fois et renvoie un ensemble de caractéristiques
 
 
 # Slide 2

@@ -3,24 +3,24 @@ Les 2 précédents algorithmes (R-CNN et Fast-R-CNN) utilise ce que l'on appel l
 Cette algorithme est donc ajouté à Fast R-CNN et nommé Region Proposal Network (RPN) créant ainsi le Faster R-CNN
 
 # Slide 2
+
 L’architecture du RPN est assez particulière. Le RPN fait glisser une fenêtre en long et en large de l’image, au centre de laquelle se trouve ce que les auteurs ont appelé l’ancre. L’ancre est simplement le pixel central d’une fenêtre.
+Cette fenêtre est de longueur et taille variable comme visible
 
-Bien entendu, les régions qui contiennent un objet peuvent avoir différentes tailles et différents aspects (l’aspect est le ratio longueur / largeur). Dans le cas du RPN, au moment de l’entraînement du réseau, le développeur choisit K1 tailles et K2 aspects différents. Dans le RPN original K1 = K2 = 3. 3 x 3 = 9 types de zone pour chaque ancre. Autrement dit, chaque ancre pourra être le centre de 9 zones différentes potentielles, correspondantes aux tailles et aux aspects choisit par le développeur.
-
-Si l’on note K1 le nombre de tailles et K2 le nombre d’aspects différents, il y aura donc en tout H x W x K1 x K2 ancres pour une image de longueur H et de largeur W.
-
-
-# Slide 3
+Bien entendu, les régions qui contiennent un objet peuvent avoir différentes tailles et différents aspects (l’aspect est le ratio longueur / largeur). 
+Dans le cas du RPN, au moment de l’entraînement du réseau, le développeur choisit K1 tailles et K2 aspects différents. Dans le RPN original K1 = K2 = 3. 
+Il y a donc, par défaut, 3 x 3 = 9 types de zone pour chaque ancre. Autrement dit, chaque ancre pourra être le centre de 9 zones différentes potentielles, correspondantes aux tailles et aux aspects choisit.
 
 Pour chacune de ces régions, le RPN dispose de deux mécanismes :
 * un système de classification
 * un système de régression
 
+# Slide 3
 Le classifieur a pour objectif d’assigner une probabilité à une région de contenir un objet tandis que le système de régression adapte les coordonnées de la région. La probabilité d’une région de contenir un objet est notée p ou pi (probabilité de la zone i de contenir un objet). Les coordonnées (4 points) de chaque région sont notées t (ou ti pour la région i), t est donc un vecteur de taille 4.
 
 Un RPN est un réseau qui est paramétré au fur et à mesure de l’apprentissage. 
 
-Finalement, Lclasses est en général une “log-loss”. La log-loss est souvent plus intéressante que la simple précision, parce qu’elle permet de nuancer à quel point notre prédiction est proche de la valeur réelle.
+RPN utilise généralement une fonction log-loss car elle est plus intéressante que la simple précision, parce qu’elle permet de nuancer à quel point notre prédiction est proche de la valeur réelle.
 
 # Slide 4
 

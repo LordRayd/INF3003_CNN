@@ -35,7 +35,7 @@ Cette regression de coefficient est utilisé pour amélioré les coordonnées de
 # Slide 3
 Il y a plusieurs fait intéressant à connaitre sur cette algorithme.
 
-Lors de l'entrainement,toutes les ancres qui traversent la bordure sont ignoré afin qu'ils ne contribuent pas à la perte.
+Lors de l'entrainement, toutes les ancres qui traversent la bordure sont ignoré afin qu'ils ne contribuent pas à la perte.
 Ce qui permet de reduire le nombre d'ancre d'une image de, par exemple, 20k ancres de bases à 6k ancres.
 Une ancre est considéré comme positive lorsqu'elle valide une des 2 conditions suivantes :
 * L'ancre à la plus grande *Intersection Over Union(IoU)*, mesure de chevauchement, avec une boite de vérité fondamentale.
@@ -56,8 +56,9 @@ Ainsi, la zone de délimitation avec le score le plus élevé est conservée pou
 Tous ça permet d'obtenir environ 2k propositions de cadre de delimitation par image, et ainsi de remplacer la recherche selective.
 
 # Slide 4
-on cherche a savoir ici si la différence en temps d'exécution est si importante et on peut voir que l'algorithme Faster R-CNN est 
+On cherche a savoir ici si la différence en temps d'exécution est si importante et on peut voir que l'algorithme Faster R-CNN est 
 245 fois plus rapide que l'algorithme de R-CNN et 11 fois plus rapide que l'agorithme Fast R-CNN. 
 L'utilisation d'un autre selecteur de zones est donc bien plus efficace en terme de temps
 
 # Slide 5
+On obtient bien un algorithme capable de reconnaitre tout objet pour peut qu'il est été entrainé à les reconnaitre avec une rapidité imprésionnante.

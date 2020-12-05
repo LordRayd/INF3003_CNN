@@ -1,0 +1,10 @@
+Algorithme de détection en temps réel supérieur aux autres méthodes récentes.
+Besoin d'une seule activation par propagation.
+Voir le problème de détection comme un problème de regression.
+Découpe l'image d'entrée en une grille de taille NxN et prédit un score de confiance pour chaque cellule.
+Le réseau de neuronne est composé de 24 couches de convolution suivies de 2 couches complètement connectées.
+Plusieurs versions de YOLO ont été implémentées selon différents besoins (rapidité vs accuracy)
+En somme l'algorithme est plus performant sur tout les points.
+Comme on peut le voir sur ce graphique.
+
+

@@ -1,0 +1,4 @@
+Algorithme basique pour le détection simple d'objet.$
+Concept nouveau (à l'époque): création de propositions par régions de l'image
+Application plus classique d'un CNN + SVM par la suite.
+Optimisation (+ 3% en accuracy) grâce au Bounding Box Regressor

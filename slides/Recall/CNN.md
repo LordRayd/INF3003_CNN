@@ -1,6 +1,3 @@
----
-marp : true
----
 # Recall
 
 ## Convolutional Neural Network
@@ -9,21 +6,21 @@ marp : true
 - Filter an image and capture the features and dependencies
 - Pattern recognition
 
----
+------
 
-# Convolutional Neural Network - How it works :
+## Convolutional Neural Network - How it works :
 
-## Kernel and Convolution operation
+### Kernel and Convolution operation
 
 - Convolution operation on the image with a kernel.
 -  Extraction of the image features
 
-## Pooling Layer
+### Pooling Layer
 
 - Reduction of the spatial size of the matrix resulted after a Convolution layer
 - Help in extracting the dominant features
 - Two types of Pooling
 
-## Output Layer
+### Output Layer
 
 - Softmax classification

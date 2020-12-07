@@ -1,8 +1,4 @@
----
-marp : true
----
-
-# SVM - Support Vector Machine
+## SVM - Support Vector Machine
 
 - Linear and non-Linear Classification and regression analysis
 - Can be used in a supervised and unsupervised environment
@@ -13,6 +9,5 @@ marp : true
 
 ---
 
-# SVM - How it works :
-
-![](/assets/images/1_06GSco3ItM3gwW2scY6Tmg.png)
+## SVM - How it works :
+<img width="40%" src="/assets/images/1_06GSco3ItM3gwW2scY6Tmg.png">

@@ -1,5 +1,17 @@
+slides/pdg.md
+slides/contents.md
 slides/Intro/Intro.md
 slides/Intro/Tasks.md
 slides/Intro/Performance.md
+slides/Recall/CNN.md
+slides/Recall/SVM.md
 slides/Data/Intro.md
+slides/Methods/HOG.md
+slides/Methods/r-cnn/r-cnn.md
+slides/Methods/fast-r-cnn/fast-r-cnn.md
+slides/Methods/faster-r-cnn/faster-r-cnn.md
+slides/Methods/yolo/yolo.md
+slides/Methods/mask-r-cnn/mask-r-cnn.md
 slides/Applications/Intro.md
+slides/conclusion.md
+slides/sources.md

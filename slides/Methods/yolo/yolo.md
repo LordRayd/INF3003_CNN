@@ -8,7 +8,7 @@ marp: true
 - Outperforms other detection methods
 ![alt text](/assets/images/yolo/yoloExample.jpg "YOLO Example")
 
----
+------
 
 ### Workflow
 - Resolves object detection as a regression problem
@@ -16,7 +16,7 @@ marp: true
 - Neural Network : 24 convolution layers followed by 2 fully connected layers
 ![alt text](/assets/images/yolo/yoloNN.png "YOLO Neural Network")
 
----
+------  
 
 ### Performance
 - Adjustements and improvements in v2 (v3 and v4 also exist)
